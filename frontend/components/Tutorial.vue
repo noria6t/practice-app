@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">
-        Zenn-app
+        Practice-App
       </h1>
       <h2 class="subtitle">
         {{ subTitle }}
@@ -21,7 +21,7 @@
 export default {
   data() {
     return {
-      subTitle: 'Zenn is good service!!',
+      subTitle: 'Practice-App is good service!!',
       tasks: []
     }
   },
