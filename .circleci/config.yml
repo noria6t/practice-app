@@ -37,10 +37,10 @@ jobs:
 
       # Database setup
       - run:
-          name: Database Setup
-          command: |
-            bundle exec rake db:migrate
-            bundle exec rake db:structure:load
+          command: bundle exec rails db:create
+          working_directory: ~/repo/backend
+      - run:
+          command: bundle exec rails db:migrate
           working_directory: ~/repo/backend
 
       - run:
