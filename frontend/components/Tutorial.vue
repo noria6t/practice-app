@@ -2,13 +2,13 @@
   <div class="container">
     <div>
       <h1 class="title">
-        Zenn-app
+        Practice-App
       </h1>
       <h2 class="subtitle">
         {{ subTitle }}
       </h2>
       <button @click="getSomething">
-        タスク取得
+        タスク取得 
       </button>
       <ul v-for=" task in tasks" :key="task.id">
         <li style="text-align: left;">{{ task.title }}</li>
@@ -21,7 +21,7 @@
 export default {
   data() {
     return {
-      subTitle: 'Zenn is good service!!',
+      subTitle: 'Practice-App is good service!!',
       tasks: []
     }
   },
